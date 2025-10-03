@@ -1,0 +1,18 @@
+[package]
+name = "anna_os"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "anna_os"
+test = false
+bench = false
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+bootloader = "0.11.12"
